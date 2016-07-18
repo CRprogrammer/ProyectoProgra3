@@ -12,12 +12,14 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+                    <img src="@Url.Content("~/Content/Images/Logo.png")" class="navbar-brand" alt="Logo" id="logo" />
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+                @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -30,7 +32,18 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>
+                All rights reserverd &copy; @DateTime.Now.Year - ¡Pura Vida! Hotel reservations || Another <a href="https://www.facebook.com/oscar.gonzalez.946179">M&M</a> Design <img src="@Url.Content("~/Content/Images/LeftLogo.png")" ID="LeftLogo"/>
+            </p>
+            <div >
+                <a href="https://www.facebook.com/oscar.gonzalez.946179"><img src="Content/Images/Socials/fb2.png" class="grayscale"/></a>
+                <img src="@Url.Content("Content/Images/Socials/twitter2.png")" class="grayscale"/>
+                <img src="@Url.Content("Content/Images/Socials/gp.png")" class="grayscale"/>
+                <img src="@Url.Content("Content/Images/Socials/linkein.png")" class="grayscale"/>
+                <img src="@Url.Content("Content/Images/Socials/pinterest.png")" class="grayscale"/>
+                <img src="@Url.Content("Content/Images/Socials/skype.png")" class="grayscale"/>
+                <img src="@Url.Content("Content/Images/Socials/yt.png")" class="grayscale"/>
+            </div>        
         </footer>
     </div>
 
